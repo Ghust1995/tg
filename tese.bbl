@@ -1,0 +1,97 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{1.45.2.1 }
+
+\bibitem[Benchmarks 2017]{BENCHMARK}
+\abntrefinfo{Benchmarks}{BENCHMARKS}{2017}
+{BENCHMARKS: The computer language benchmarks game. 2017.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/benchmarksgame\-.alioth\-.debian\-.org\-/$>$}{http://benchmarksgame.alioth.debian.org/}.}
+
+\bibitem[EMSCRIPTEN 2015]{EMSCRIPTEN_OPENGL}
+\abntrefinfo{EMSCRIPTEN}{EMSCRIPTEN}{2015}
+{EMSCRIPTEN: Opengl support in emscripten. 2015.
+Dispon{\'\i}vel em:
+  $<$https:\-/\-/kripken\-.github\-.io\-/emscripten-site\-/docs\-/porting\-/multimedia\underline{\
+  }and\underline{\ }graphics\-/OpenGL-support\-.html$>$.}
+
+\bibitem[FLASH 2015]{FLASH}
+\abntrefinfo{FLASH}{FLASH}{2015}
+{FLASH: The death of adobe flash. 2015.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/kotaku\-.com\-/the-death-of-flash-is-coming-and-not-everyones-happy-1717824387$>$}{http://kotaku.com/the-death-of-flash-is-coming-and-not-everyones-happy-1717824387}.}
+
+\bibitem[JOGO 2011]{BOI}
+\abntrefinfo{JOGO}{JOGO}{2011}
+{JOGO: The binding of isaac. 2011.
+Dispon{\'\i}vel em:
+  $<$https:\-/\-/en\-.wikipedia\-.org\-/wiki\-/The\underline{\
+  }Binding\underline{\ }of\underline{\ }Isaac\underline{\ }(video\underline{\
+  }game)$>$.}
+
+\bibitem[JOGO 2015]{CLICKERHEROES}
+\abntrefinfo{JOGO}{JOGO}{2015}
+{JOGO: Clicker heroes. 2015.
+Dispon{\'\i}vel em: $<$https:\-/\-/en\-.wikipedia\-.org\-/wiki\-/Superhot$>$.}
+
+\bibitem[JOGO 2016]{SUPERHOT}
+\abntrefinfo{JOGO}{JOGO}{2016}
+{JOGO: Superhot. 2016.
+Dispon{\'\i}vel em: $<$https:\-/\-/en\-.wikipedia\-.org\-/wiki\-/Superhot$>$.}
+
+\bibitem[McGuire e Jenkins 2009]{CREATINGGAMES}
+\abntrefinfo{McGuire e Jenkins}{MCGUIRE; JENKINS}{2009}
+{MCGUIRE, M.; JENKINS, O.~C. \textbf{Creating games: mechanics, content, and
+  technology}. 3rd. ed. Wellesley, Mass: AK Peters, Ltd, 2009. 33--34~p.}
+
+\bibitem[Munshi Dan~Ginsburg 2008]{OPENGL}
+\abntrefinfo{Munshi Dan~Ginsburg}{MUNSHI DAN~GINSBURG}{2008}
+{MUNSHI DAN~GINSBURG, D.~S. A. \textbf{OpenGL ES 2.0 Programming Guide}.
+  [S.l.]: Pearson Education, 2008.}
+
+\bibitem[NASDAQ 2016]{NASDAQ}
+\abntrefinfo{NASDAQ}{NASDAQ}{2016}
+{NASDAQ: Investing in video games industry. 2016.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/www\-.nasdaq\-.com\-/g00\-/article\-/investing-in-video-games-this-industry-pulls-in-more-revenue-than-movies-music-cm634585\-/$>$}{http://www.nasdaq.com/g00/article/investing-in-video-games-this-industry-pulls-in-more-revenue-than-movies-music-cm634585/}.}
+
+\bibitem[NEWZOO 2017]{NEWZOO}
+\abntrefinfo{NEWZOO}{NEWZOO}{2017}
+{NEWZOO: Global games market report. 2017.
+Dispon{\'\i}vel em:
+  $<$https:\-/\-/newzoo\-.com\-/insights\-/articles\-/the-global-games-market-will-reach-108-9-billion-in-2017-with-mobile-taking-42\-/$>$.}
+
+\bibitem[PNaCl 2011]{PNACL}
+\abntrefinfo{PNaCl}{PNACL}{2011}
+{PNACL: Google native client. 2011.
+Dispon{\'\i}vel em:
+  $<$https:\-/\-/developer\-.chrome\-.com\-/native-client$>$.}
+
+\bibitem[SDL2 2015]{SDL2}
+\abntrefinfo{SDL2}{SDL2}{2015}
+{SDL2: Simple directmedia layer homepage. 2015.
+Dispon{\'\i}vel em: $<$https:\-/\-/www\-.libsdl\-.org\-/index\-.php$>$.}
+
+\bibitem[UNITY 2015]{UNITYWEB}
+\abntrefinfo{UNITY}{UNITY}{2015}
+{UNITY: The computer language benchmarks game. 2015.
+Dispon{\'\i}vel em:
+  $<$https:\-/\-/blogs\-.unity3d\-.com\-/2015\-/10\-/08\-/unity-web-player-roadmap\-/$>$.}
+
+\bibitem[WASM 2015]{WASM}
+\abntrefinfo{WASM}{WASM}{2015}
+{WASM: The computer language benchmarks game. 2015.
+Dispon{\'\i}vel em:
+  \htmladdnormallink{$<$http:\-/\-/webassembly\-.org\-/$>$}{http://webassembly.org/}.}
+
+\bibitem[Zakai 2011]{EMSCRIPTEN}
+\abntrefinfo{Zakai}{ZAKAI}{2011}
+{ZAKAI, A. Emscripten: an llvm-to-javascript compiler.
+\textbf{OOPSLA '11 Proceedings of the ACM international conference companion on
+  Object oriented programming systems languages and applications companion}, p.
+  301--312, out. 2011.}
+
+\end{thebibliography}

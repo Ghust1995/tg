@@ -1,0 +1,36 @@
+\chapter{Introdução}
+
+A indústria de jogos é um dos setores da indústria de entretenimento que mais gera lucro, gerando em 2016 mais lucro que o setor de musica e de filmes \cite{NASDAQ}. Essa indústria é dividida em diversos outros subsetores como o desenvolvimento de jogos para video-game, jogos mobile e jogos de computador. Dentro do setor dos jogos de computador pode-se tambem fazer algumas subdivisões como jogos que precisam ser instalados e jogos que podem ser jogados no browser.
+
+Apesar de ser a menor parcela do setor no quesito de lucro, os jogos de browser ainda possuem relevância no contexto geral, e muitas vezes servem como o ambiente inicial onde o jogo pode ser jogado \cite{NEWZOO}. Por não necessitarem de software baixado além do navegador e serem tipicamente gratuitos, os jogos de browser são de acessibilidade muito simples para o usuário. Para os desenvolvedores, especialmente aqueles sem investimentos multimilionários voltados para marketing e publicação, a acessibilidade dos jogos de browser torna-se um método de veículação e engajamento de usuário muito eficiente. Diversos jogos independentes bem sucedidos possuem ou possuiram em algum momento alguma versão ou protótipo possivel de ser jogado no browser \cite{BOI, CLICKERHEROES, SUPERHOT}.
+
+Além do apelo financeiro, jogos podem ser usados como forma de expressão artística e como um hobby. Como para as grandes empresas jogos são um investimento multimilionário, os resultados são em sua maioria jogos menos inovadores que aqueles desenvolvidos por pequenas empresas ou desenvolvedores que o fazem por hobby, uma vez que o risco envolvido para estes costuma ser bem menor \cite{CREATINGGAMES}.
+
+Inicialmente, grande parte dos jogos de browser eram desenvolvidos utilizando-se a ferramenta Adobe Flash, porém, com o surgimento do HTML5 e do WebGL, o uso de um plugin terceirizado para rodar jogos tem sido cada vez mais mal visto, incentivando o desenvolvimento usando as tecnologias padrão encontradas no browser \cite{UNITYWEB, FLASH}.
+
+Uma limitação sempre presente quanto à evolução dos jogos de browser é a limitação da velocidade de processamento do browser, especialmente quando os jogos são em ambientes tridimensionais. A linguagem mais utilizada para o desenvolvimento de jogos 3d é C++, especialmente devido à eficiência, gerenciamento de memória e comunicação com sistemas de baixo nível como a placa de video. Como javascript é a linguagem padrão dos browsers e sua eficiência é consideravelmente inferior à de C++ \cite{BENCHMARK}, a implementação de jogos 3d com graficos otimizados no browser sempre foi deixada de lado. No entanto com o crescimento cada vez maior das tecnologias dos browsers tornou-se necessário cada vez mais ter códigos mais eficientes e com velocidades mais próximas à nativa, surgindo assim diversas soluções para se executar codigos nativos no browser como PNaCL \cite{PNACL} e WebAssembly \cite{WASM}.
+
+\section{Motivação}
+
+As ferramentas existentes hoje em dia para desenvolvimento de jogos com suporte para exportar para web são em sua maioria Engines completas, como Unity3d, Unreal Engine e Godot. Estas possuem inúmeras utilidades como simulação de física, criação de interface de usuário (UI), gerenciador de animações para modelos 3d, entre outras. Para ser possível a união de tantas ferramentas em uma unica Engine, o usuário acaba se vinculando demais à arquitetura da mesma e soluções improváveis acabam se tornando mais difíceis de se implementar devido à generalização. Para a maioria dos casos a Engine serve perfeitamente ao desenvolvedor, no entanto, em alguns casos a falta de controle é relevante.
+
+Esse trabalho tem como objetivo criar não uma engine, mas uma framework que dá ao usuário a capacidade de pular as tarefas mais complicadas de se desenvolver uma engine, como um mecanismo simples de input e uma interface mais simples de utilização da placa de vídeo que o OpenGL padrão.
+
+A motivação pessoal para o desenvolvimento desse trabalho é poder ter uma ferramenta propria para desenvolvimento de jogos, com capacidade de exportar para Web. Além disso, esse projeto visa ampliar os conhecimentos sobre os sistemas de baixo nível no desenvolvimento de jogos, especialmente um melhor entendimento de API's de gráfico 3d e da linguagem C++ em um projeto de maior escala.
+
+\section{Objetivo}
+
+O objetivo do trabalho é ter uma framework de facil distribuição e fácil uso no sistema operacional Windows. Para a criação de jogos, a framework terá como objetivo abstrair as camadas de entendimento complexo relacionado ao uso do OpenGL e do STL. A framework deverá ter uma interface simples de posicionamento de formas geométricas no espaço (sendo um bonus a possibilidade de se importar modelos 3d) além da implementação de um sistema de cameras básico. Além disso, a framework deverá possuir uma interface simples de leitura de input do teclado e do mouse. Por fim, caso se mostre necessário, a framework poderá ter integrada uma biblioteca de UI imediata para casos de debug e desenvolvimento.
+
+\section{Ferramentas}
+%Sequencia de passos necessários para demonstrar que o objetivo proposto foi atingido, ou seja, que os resultados obtidos são convincentes
+\subsection{Emscripten}
+Emscripten é um compilador de LLVM para javascript. LLVM é uma infraestrutura de compilador que serve para facilitar a criação de compiladores e transpiladores. Dada qualquer linguagem compilada para a linguagem intermediária do LLVM, a ferramenta Emscripten pode ser utilizada para ser enfim compilada pra javascript \cite{EMSCRIPTEN}.
+
+O principal objetivo de compilar LLVM para javascript é a compilação de C++. Além disso, o Emscripten possui já implementadas algumas bibliotecas importantes para o uso no browser, sendo elas a transformação de OpenGL para WebGL e a biblioteca SDL2.
+
+\subsection{OpenGL}
+OpenGL, \textit{Open Graphics Library} é uma API multiplataforma padrão para desenvolvimento de graficos 3D. É um padrão de API 3D amplamente aceito com uso significante no mundo real.\cite{OPENGL}. A versão do OpenGL usada nos browsers, com a API em javascript é conhecida como WebGL, que é baseada no OpenGL ES 2.0, versão essa voltada para dispositivos móveis e sistemas embarcados. Como o emscripten é capaz de transformar um subconjunto de OpenGL ES 2.0 em WebGL sem maiores problemas \cite{EMSCRIPTEN_OPENGL}, esse será o subconjunto utilizado no projeto.
+
+\subsection{SDL2}
+SDL2, \textit{Simple DirectMedia Layer} é uma biblioteca de desenvolvimento multiplataforma criada para prover acesso de baixo nível aos hardwares de audio, mouse, teclado, joystick, alem de possuir uma interface com OpenGL \cite{SDL2}. Como é uma biblioteca muito utilizada para desenvolvimento de jogos em C++ e o emscripten já possui uma versão própria da biblioteca já compilada, essa foi a escolha de biblioteca base para a multimídia do trabalho.

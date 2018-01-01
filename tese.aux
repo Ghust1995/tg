@@ -26,12 +26,6 @@
 \@writefile{toc}{\select@language{brazil}}
 \@writefile{lof}{\select@language{brazil}}
 \@writefile{lot}{\select@language{brazil}}
-\gdef \LT@i {\LT@entry 
-    {1}{57.81564pt}\LT@entry 
-    {1}{203.7944pt}}
-\gdef \LT@ii {\LT@entry 
-    {1}{38.1719pt}\LT@entry 
-    {1}{361.7183pt}}
 \citation{NASDAQ}
 \citation{NEWZOO}
 \citation{BOI}
@@ -56,16 +50,90 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.3.1}Emscripten}{16}{subsection.1.3.1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.3.2}OpenGL}{16}{subsection.1.3.2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.3.3}SDL2}{16}{subsection.1.3.3}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {2}Modelagem Din\IeC {\^a}mica de Cupins Cibern\IeC {\'e}ticos}{17}{chapter.2}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Desenvolvimento}{17}{chapter.2}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Controle Robusto de Concretos Ca\IeC {\'o}ticos}{18}{chapter.3}}
+\newlabel{cap:desenvolvimento}{{2}{17}{Desenvolvimento}{chapter.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Hello World}{17}{section.2.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Cria\IeC {\c c}\IeC {\~a}o de modelos}{17}{section.2.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Hello World do OpenGL\relax }}{18}{figure.caption.6}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{des:glhello}{{2.1}{18}{Hello World do OpenGL\relax }{figure.caption.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Cria\IeC {\c c}\IeC {\~a}o de uma camera com perspectiva}{18}{section.2.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Input do Usu\IeC {\'a}rio}{19}{section.2.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Jogo implementado utilizando-se a framework\relax }}{20}{figure.caption.7}}
+\newlabel{des:gamedoom}{{2.2}{20}{Jogo implementado utilizando-se a framework\relax }{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.5}Provas de Conceito}{20}{section.2.5}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Documenta\IeC {\c c}\IeC {\~a}o}{21}{chapter.3}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{cap:Documenta\IeC {\c c}\IeC {\~a}o}{{3}{21}{Documentação}{chapter.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Classe Game}{21}{section.3.1}}
+\newlabel{doc:game}{{3.1}{21}{Classe Game}{section.3.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}void Load()}{21}{subsection.3.1.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}void Update()}{21}{subsection.3.1.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}void Draw()}{21}{subsection.3.1.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Classe Transform}{21}{section.3.2}}
+\newlabel{doc:transform}{{3.2}{21}{Classe Transform}{section.3.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Transform()}{22}{subsection.3.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}glm::vec3 forward()}{22}{subsection.3.2.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}glm::vec3 up()}{22}{subsection.3.2.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.4}glm::vec3 right()}{22}{subsection.3.2.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.5}void Translate(glm::vec3 translation)}{22}{subsection.3.2.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.6}void Rotate(float angle, glm::vec3 axis)}{22}{subsection.3.2.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.7}glm::vec3 position}{22}{subsection.3.2.7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.8}glm::vec3 rotation}{22}{subsection.3.2.8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.9}glm::vec3 scale}{22}{subsection.3.2.9}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Classe Camera}{23}{section.3.3}}
+\newlabel{doc:camera}{{3.3}{23}{Classe Camera}{section.3.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Camera(const float fov, const float aspect\_ratio, const float near, const float far)}{23}{subsection.3.3.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}void Translate(glm::vec3 translation)}{23}{subsection.3.3.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}void Rotate(float angle, glm::vec3 axis)}{23}{subsection.3.3.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.4}void SetPosition(glm::vec3 position)}{23}{subsection.3.3.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.5}void SetRotation(glm::quat rotation)}{23}{subsection.3.3.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.6}glm::vec3 position()}{23}{subsection.3.3.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.7}glm::quat rotation()}{23}{subsection.3.3.7}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Classe EventSystem}{24}{section.3.4}}
+\newlabel{doc:events}{{3.4}{24}{Classe EventSystem}{section.3.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}EventSystem()}{24}{subsection.3.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}void Add(Event e, Callback callback)}{24}{subsection.3.4.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.3}void Fire(Event e)}{24}{subsection.3.4.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Classe KeyboardInput}{24}{section.3.5}}
+\newlabel{doc:keyboardinput}{{3.5}{24}{Classe KeyboardInput}{section.3.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.1}KeyboardInput(SDL\_KeyMapping *keymapping, const int mappingsize)}{24}{subsection.3.5.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5.2}void BindAction(const char *name, const InputType type, const std::function<void()> callback)}{24}{subsection.3.5.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.6}Classe MouseInput}{24}{section.3.6}}
+\newlabel{doc:mouseinput}{{3.6}{24}{Classe MouseInput}{section.3.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.1}MouseInput(SDL\_MouseKeyMapping *keymapping, const int mappingsize)}{25}{subsection.3.6.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.2}void BindAction(const char *name, const InputType type, const std::function<void()> callback)}{25}{subsection.3.6.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.6.3}void BindMovement(const std::function<void(const MouseMovementData *d)> callback)}{25}{subsection.3.6.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.7}Classe Scheduler}{25}{section.3.7}}
+\newlabel{doc:scheduler}{{3.7}{25}{Classe Scheduler}{section.3.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.1}Scheduler()}{25}{subsection.3.7.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.2}void Update(SchedulerTime delta\_time)}{25}{subsection.3.7.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.3}void Add(SchedulerTime dt, SchedulerTask task)}{25}{subsection.3.7.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.4}void Repeat(SchedulerTime delay, SchedulerTime dt, SchedulerTask task)}{26}{subsection.3.7.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.5}void Repeat(SchedulerTime dt, SchedulerTask task)}{26}{subsection.3.7.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.8}Namespace Time}{26}{section.3.8}}
+\newlabel{doc:time}{{3.8}{26}{Namespace Time}{section.3.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.8.1}float GetDelta()}{26}{subsection.3.8.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.8.2}float GetTotal()}{26}{subsection.3.8.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.9}Namespace Graphics}{26}{section.3.9}}
+\newlabel{doc:graphics}{{3.9}{26}{Namespace Graphics}{section.3.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.9.1}void Cube()}{26}{subsection.3.9.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.9.2}void SetMaterial(glm::vec3 diffuse_color, glm::vec3 specular_color)}{26}{subsection.3.9.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.9.3}void PointLight(glm::vec3 position, glm::vec3 color, float intensity)}{27}{subsection.3.9.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.9.4}void SetAmbientLight(glm::vec3 color)}{27}{subsection.3.9.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.9.5}void SetClearColor(glm::vec3 color)}{27}{subsection.3.9.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.9.6}void SetCamera(const Camera *camera)}{27}{subsection.3.9.6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.9.7}void Clear()}{27}{subsection.3.9.7}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Considera\IeC {\c c}\IeC {\~o}es Finais}{28}{chapter.4}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.1}Alta prioridade}{28}{subsection.4.0.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.2}Media prioridade}{28}{subsection.4.0.2}}
 \bibdata{abnt-options,Referencias/referencias}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Conclus\IeC {\~a}o}{19}{chapter.4}}
-\@writefile{lof}{\addvspace {10\p@ }}
-\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.3}Baixa prioridade}{29}{subsection.4.0.3}}
 \bibcite{BENCHMARK}{Benchmarks 2017}
 \bibciteEXPL{BENCHMARK}{Benchmarks}
 \bibciteIMPL{BENCHMARK}{BENCHMARKS}
@@ -118,7 +186,7 @@
 \bibciteEXPL{UNITYWEB}{UNITY}
 \bibciteIMPL{UNITYWEB}{UNITY}
 \bibciteYEAR{UNITYWEB}{2015}
-\@writefile{toc}{\contentsline {chapter}{Refer\^encias}{20}{chapter.5}}
+\@writefile{toc}{\contentsline {chapter}{Refer\^encias}{30}{chapter.5}}
 \bibcite{WASM}{WASM 2015}
 \bibciteEXPL{WASM}{WASM}
 \bibciteIMPL{WASM}{WASM}
@@ -128,19 +196,24 @@
 \bibciteIMPL{EMSCRIPTEN}{ZAKAI}
 \bibciteYEAR{EMSCRIPTEN}{2011}
 \@writefile{toc}{\SetAppendixTocName  {Ap\^endice}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}T\IeC {\'o}picos de Dilema Linear}{22}{appendix.A}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}Representa\IeC {\c c}\IeC {\~a}o Matricial de Pontos, Vetores e Transforma\IeC {\c c}\IeC {\~o}es}{32}{appendix.A}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {A.1}Uma Primeira Se\IeC {\c c}\IeC {\~a}o para o Ap\IeC {\^e}ndice}{22}{section.A.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {A.1}{\ignorespaces Uma figura que est\IeC {\'a} no ap\IeC {\^e}ndice\relax }}{22}{figure.caption.10}}
-\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{FD}{{A.1}{22}{Uma figura que está no apêndice\relax }{figure.caption.10}{}}
-\@writefile{toc}{\SetAppendixTocName  {Anexo}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}Exemplo de um Primeiro Anexo}{23}{annex.a}}
-\@writefile{lof}{\addvspace {10\p@ }}
-\@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {A.1}Uma Se\IeC {\c c}\IeC {\~a}o do Primeiro Anexo}{23}{section.a.1}}
-\newlabel{LastPage}{{}{24}{}{page.24}{}}
-\xdef\lastpage@lastpage{24}
-\xdef\lastpage@lastpageHy{24}
+\newlabel{ape:matrix}{{A}{32}{Representação Matricial de Pontos, Vetores e Transformações}{appendix.A}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.1}Pontos e Vetores}{32}{section.A.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {A.2}Transforma\IeC {\c c}\IeC {\~o}es}{33}{section.A.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.2.1}Transla\IeC {\c c}\IeC {\~a}o}{33}{subsection.A.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.2.2}Escala}{33}{subsection.A.2.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.2.3}Rota\IeC {\c c}\IeC {\~a}o}{34}{subsection.A.2.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.2.4}Proje\IeC {\c c}\IeC {\~a}o}{34}{subsection.A.2.4}}
+\newlabel{fig:perspective-before}{{A.1a}{35}{Subfigure A A.1a}{subfigure.A.1.1}{}}
+\newlabel{sub@fig:perspective-before}{{(a)}{a}{Subfigure A A.1a\relax }{subfigure.A.1.1}{}}
+\newlabel{fig:perspective-after}{{A.1b}{35}{Subfigure A A.1b}{subfigure.A.1.2}{}}
+\newlabel{sub@fig:perspective-after}{{(b)}{b}{Subfigure A A.1b\relax }{subfigure.A.1.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {A.1}{\ignorespaces Aplica\IeC {\c c}\IeC {\~a}o da matriz de perspectiva a pontos no espa\IeC {\c c}o\relax }}{35}{figure.caption.9}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {Antes}}}{35}{subfigure.1.1}}
+\@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {Depois}}}{35}{subfigure.1.2}}
+\newlabel{LastPage}{{}{36}{}{page.36}{}}
+\xdef\lastpage@lastpage{36}
+\xdef\lastpage@lastpageHy{36}
 \bibstyle{abnt-alf}

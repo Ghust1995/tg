@@ -1,6 +1,6 @@
-PWD c:/Users/gusta/Desktop/Raw TG
+PWD c:/Users/gusta/Desktop/tg
 INPUT C:/Users/gusta/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt
-INPUT c:/Users/gusta/Desktop/Raw TG/tese.tex
+INPUT c:/Users/gusta/Desktop/tg/tese.tex
 OUTPUT tese.log
 INPUT ita.cls
 INPUT ita.cls
@@ -308,23 +308,14 @@ INPUT Misc/dedicatoria.tex
 INPUT Misc/dedicatoria.tex
 INPUT Misc/agradecimentos.tex
 INPUT Misc/agradecimentos.tex
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/ae/aer8.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/public/ae/aer8.vf
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi8.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmu10.tfm
 INPUT Misc/citacao.tex
 INPUT Misc/citacao.tex
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/ae/t1aess.fd
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/ae/t1aess.fd
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/ae/aess12.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/ae/aessi12.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/ae/aecsc10.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/public/ae/aessi12.vf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmssi12.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/public/ae/aecsc10.vf
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmcsc10.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi10.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi10.tfm
 INPUT Misc/resumo.tex
 INPUT Misc/resumo.tex
 INPUT Misc/abstract.tex
@@ -332,37 +323,42 @@ INPUT Misc/abstract.tex
 INPUT tese.lof
 INPUT tese.lof
 OUTPUT tese.lof
-INPUT tese.lot
-INPUT tese.lot
-OUTPUT tese.lot
-INPUT tese.lof
-INPUT tese.lof
-OUTPUT tese.lof
-INPUT Misc/listaabreviaturas.tex
-INPUT Misc/listaabreviaturas.tex
-INPUT tese.lof
-INPUT tese.lof
-OUTPUT tese.lof
-INPUT Misc/listasimbolos.tex
-INPUT Misc/listasimbolos.tex
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/ae/aebx8.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/ae/aer6.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/ae/aebx6.tfm
 INPUT tese.toc
 INPUT tese.toc
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/ae/aecsc10.tfm
 OUTPUT tese.toc
 INPUT Cap-Introducao/index.tex
 INPUT Cap-Introducao/index.tex
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/ae/aeti12.tfm
-INPUT Cap1/index.tex
-INPUT Cap1/index.tex
+INPUT Cap-Desenvolvimento/index.tex
+INPUT Cap-Desenvolvimento/index.tex
 INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/public/ae/aeti12.vf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmti12.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsl12.tfm
-INPUT Cap2/index.tex
-INPUT Cap2/index.tex
+INPUT Cap-Desenvolvimento/glhello.png
+INPUT ./Cap-Desenvolvimento/glhello.png
+INPUT ./Cap-Desenvolvimento/glhello.png
+INPUT ./Cap-Desenvolvimento/glhello.png
+INPUT ./Cap-Desenvolvimento/glhello.png
+INPUT Cap-Desenvolvimento/gamedoom.png
+INPUT ./Cap-Desenvolvimento/gamedoom.png
+INPUT ./Cap-Desenvolvimento/gamedoom.png
+INPUT ./Cap-Desenvolvimento/gamedoom.png
+INPUT ./Cap-Desenvolvimento/gamedoom.png
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/ae/t1aett.fd
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/ae/t1aett.fd
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/ae/aett12.tfm
+INPUT Cap-Documentação/index.tex
+INPUT Cap-Documentação/index.tex
+INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/public/ae/aett12.vf
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmtt12.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmex10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT Cap-Conclusao/index.tex
 INPUT Cap-Conclusao/index.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/ae/omsaer.fd
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/ae/omsaer.fd
 INPUT tese.bbl
 INPUT tese.bbl
 INPUT tese.brf
@@ -370,14 +366,20 @@ INPUT tese.brf
 INPUT ./tese.brf
 INPUT ./tese.brf
 OUTPUT tese.brf
-INPUT ApeA/apendiceA.tex
-INPUT ApeA/apendiceA.tex
-INPUT ApeA/pragas_ciclo_cupim.pdf
-INPUT ./ApeA/pragas_ciclo_cupim.pdf
-INPUT ./ApeA/pragas_ciclo_cupim.pdf
-INPUT ./ApeA/pragas_ciclo_cupim.pdf
-INPUT AneA/anexoA.tex
-INPUT AneA/anexoA.tex
+INPUT Ape-Matrizes/index.tex
+INPUT Ape-Matrizes/index.tex
+INPUT Ape-Matrizes/perspective-before.png
+INPUT ./Ape-Matrizes/perspective-before.png
+INPUT ./Ape-Matrizes/perspective-before.png
+INPUT ./Ape-Matrizes/perspective-before.png
+INPUT ./Ape-Matrizes/perspective-before.png
+INPUT Ape-Matrizes/perspective-after.png
+INPUT ./Ape-Matrizes/perspective-after.png
+INPUT ./Ape-Matrizes/perspective-after.png
+INPUT ./Ape-Matrizes/perspective-after.png
+INPUT ./Ape-Matrizes/perspective-after.png
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/ae/aer8.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/ae/aer6.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/ae/aer7.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/ae/aer5.tfm
 INPUT Misc/resumo.tex
@@ -386,6 +388,9 @@ INPUT Misc/resumo.tex
 INPUT Misc/resumo.tex
 INPUT Misc/resumo.tex
 INPUT Misc/resumo.tex
+INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/public/ae/aer8.vf
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi8.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmu10.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/public/ae/aer6.vf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi6.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmu10.tfm
@@ -415,6 +420,8 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmib10.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb
@@ -429,7 +436,11 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi12.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi12.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb
+INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb

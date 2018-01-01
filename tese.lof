@@ -1,8 +1,11 @@
 \select@language {brazil}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Hello World do OpenGL\relax }}{18}{figure.caption.6}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Jogo implementado utilizando-se a framework\relax }}{20}{figure.caption.7}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Uma figura que est\IeC {\'a} no ap\IeC {\^e}ndice\relax }}{22}{figure.caption.10}
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Aplica\IeC {\c c}\IeC {\~a}o da matriz de perspectiva a pontos no espa\IeC {\c c}o\relax }}{35}{figure.caption.9}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Antes}}}{35}{subfigure.1.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Depois}}}{35}{subfigure.1.2}

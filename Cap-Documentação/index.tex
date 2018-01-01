@@ -1,0 +1,166 @@
+\chapter{Documentação}
+\label{cap:Documentação}
+
+Nesse capítulo as principais interfaces publicas da aplicação serão explicadas. Como explicado no \nameref{cap:desenvolvimento}, foram implementados duas bibliotecas: \nameref{doc:graphics}, \nameref{doc:time}, e 6 classes: \nameref{doc:game}, \nameref{doc:transform}, \nameref{doc:camera}, \nameref{doc:events}, \nameref{doc:scheduler}, \nameref{doc:keyboardinput}, \nameref{doc:mouseinput},
+
+\section{Classe Game}
+\label{doc:game}
+
+A classe game é a classe principal executada pela framework, ela é composta de 3 métodos que devem ser implementados: 
+
+\subsection{void Load()}
+Chamada uma única vez no código antes do jogo inicializar qualquer coisa. Essa função tem como intenção alocar as variaveis e coisas que não serão executadas a todo frame.
+
+\subsection{void Update()}
+Chamada a todo frame e tem como intenção atualizar as variaveis do jogo.
+ 
+\subsection{void Draw()}
+Chamada todo frame com a intenção de desenhar coisas na tela. Essa função é otimizada pra utilizar a biblioteca Graphics.
+
+\section{Classe Transform}
+\label{doc:transform}
+
+A classe transform é um container de translação, rotação e escala, tendo também algumas funções auxilares muito usadas com essa informação.
+
+\subsection{Transform()}
+O construtor da Classe transform pode receber um vetor de translação, um quaternião de rotação e um vetor de escala.
+
+\subsection{glm::vec3 forward()}
+Esse método retorna o vetor (0, 0, -1) rotacionado da rotação da Transform.
+
+\subsection{glm::vec3 up()}
+Esse método retorna o vetor (0, 1, 0) rotacionado da rotação da Transform.
+
+\subsection{glm::vec3 right()}
+Esse método retorna o vetor (1, 0, 0) rotacionado da rotação da Transform.
+
+\subsection{void Translate(glm::vec3 translation)}
+Esse método muda a posição da Transform, fazendo uma translação definida pelo parametro \textit{translation}.
+
+\subsection{void Rotate(float angle, glm::vec3 axis)}
+Esse rotaciona a Transform, fazendo uma rotação definida pelo eixo \textit{axis} e pelo angulo \textit{angle}.
+
+\subsection{glm::vec3 position}
+A posição da Transform
+\subsection{glm::vec3 rotation}
+A rotação da Transform
+\subsection{glm::vec3 scale}
+A escala da Transform
+
+\section{Classe Camera}
+\label{doc:camera}
+
+A camera é um objeto utilizado pela biblioteca Graphics para determinar como a cena será renderizada, toda cena deverá possuir pelo menos uma camera.
+
+\subsection{Camera(const float fov, const float aspect\_ratio, const float near, const float far)}
+O construtor da camera recebe basicamente as informaçoes sobre o \textit{frustrum}. Cria uma camera na posição (0, 0, 0) e sem rotação (olhando para o eixo z negativo).
+
+\subsection{void Translate(glm::vec3 translation)}
+Esse método muda a posição da Transform da camera, fazendo uma translação definida pelo parametro \textit{translation}.
+  
+\subsection{void Rotate(float angle, glm::vec3 axis)}
+Esse rotaciona a Transform da camera, fazendo uma rotação definida pelo eixo \textit{axis} e pelo angulo \textit{angle}.
+
+\subsection{void SetPosition(glm::vec3 position)}
+Esse método seta a posição da Transform da camera.
+
+\subsection{void SetRotation(glm::quat rotation)}
+Esse método seta a rotação da Transform da camera.
+
+\subsection{glm::vec3 position()}
+Esse método pega a posição da Transform da camera.
+
+\subsection{glm::quat rotation()}
+Esse método pega a rotação da Transform da camera.
+
+\section{Classe EventSystem}
+\label{doc:events}
+
+\subsection{EventSystem()}
+Cria um novo event system.
+
+\subsection{void Add(Event e, Callback callback)}
+Adiciona um novo callback para quando o evento e for disparado.
+
+\subsection{void Fire(Event e)}
+Dispara o evento e.
+
+\section{Classe KeyboardInput}
+\label{doc:keyboardinput}
+Essa classe serve para transformar inputs do teclado do usuário em funções do jogo.
+
+\subsection{KeyboardInput(SDL\_KeyMapping *keymapping, const int mappingsize)}
+O construtor recebe uma lista de mapeamento de teclas para um nome de ação e o tamanho dessa lista.
+
+\subsection{void BindAction(const char *name, const InputType type, const std::function<void()> callback)}
+Essa função registra a função callback para ser chamada quando a ação \textit{name}  do tipo \textit{type} for chamada.
+
+InputType pode ser INPUT\_DOWN (quando a tecla é pressionada), INPUT\_UP (quando a tecla é solta)  e INPUT\_HOLD (quando ela está sendo segurada);
+
+\section{Classe MouseInput}
+\label{doc:mouseinput}
+Essa classe serve para transformar inputs do mouse do usuário em funções do jogo.
+
+\subsection{MouseInput(SDL\_MouseKeyMapping *keymapping, const int mappingsize)}
+O construtor recebe uma lista de mapeamento de botões do mouse para um nome de ação e o tamanho dessa lista.
+
+\subsection{void BindAction(const char *name, const InputType type, const std::function<void()> callback)}
+Análoga à função BindAction da KeyboardInput.
+
+\subsection{void BindMovement(const std::function<void(const MouseMovementData *d)> callback)}
+Registra uma função que recebe informações sobre a movimentação do mouse para ser chamada toda vez que o mouse se movimentar.
+
+\section{Classe Scheduler}
+\label{doc:scheduler}
+Essa classe serve para fazer chamadas de funções após um tempo em segundos.
+
+\subsection{Scheduler()}
+Cria um novo scheduler.
+
+\subsection{void Update(SchedulerTime delta\_time)}
+Atualiza o scheduler do tempo que passou. Geralmente o uso disso é chamar ela no Update do Game com delta\_time = Time::GetDelta().
+
+\subsection{void Add(SchedulerTime dt, SchedulerTask task)}
+Adiciona a função task para ser chamada após dt segundos.
+
+\subsection{void Repeat(SchedulerTime delay, SchedulerTime dt, SchedulerTask task)}
+Adiciona a função task para ser repetida a cada dt segundos, depois de um delay.
+
+\subsection{void Repeat(SchedulerTime dt, SchedulerTask task)}
+Adiciona a função task para ser repetida a cada dt segundos (com delay inicial de dt segundos).
+
+
+\section{Namespace Time}
+\label{doc:time}
+Namespace com funções globais relacionadas a tempo.
+
+\subsection{float GetDelta()}
+Retorna o tempo que passou entre o ultimo frame e o frame atual.
+
+\subsection{float GetTotal()}
+Retorna o tempo total de jogo desde sua inicialização.
+
+\section{Namespace Graphics}
+\label{doc:graphics}
+
+\subsection{void Cube()}
+Existem duas versoes, a Cube(glm::vec3 position, glm::quat rotation = glm::quat(), glm::vec3 scale = glm::vec3(1.0f)), e a Cube(Transform transform), a primeira recebe uma posição, uma rotação e uma escala, e posiciona um cubo, a outra recebe uma Transform e posiciona um cubo baseado nas mesmas informações. Essa função é uma prova de conceito da futura função que importaria um objeto genérico, que nao foi implementada por motivos de simplicidade.
+
+\subsection{void SetMaterial(glm::vec3 diffuse_color, glm::vec3 specular_color)}
+Essa função seta o materia que vai ser usado a partir desse momento, dependendo do shader atual, o material pode ou não afetar em propriedades como como a luz interage com o objeto.
+
+\subsection{void PointLight(glm::vec3 position, glm::vec3 color, float intensity)}
+Cria uma luz pontual na posicao definida, com cor e intensidade dada pelos parametros. Envia essas informações que podem ou não ser utilizadas pelo atual shader.
+
+\subsection{void SetAmbientLight(glm::vec3 color)}
+Seta a luz ambiente para uma determinada cor. Envia essas informações que podem ou não ser utilizadas pelo atual shader.
+
+\subsection{void SetClearColor(glm::vec3 color)}
+Seta a cor que é o plano de fundo do jogo (padrão preto).
+
+\subsection{void SetCamera(const Camera *camera)}
+Faz com que a atual camera que está renderizando a cena seja a setada por essa função.
+
+\subsection{void Clear()}
+Limpa todos os poligonos criados até então.
+
